@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Question>
+
+@foreach (var q in Model)
+{
+    <div>
+        <h3>Question @q.qaID</h3>
+        <h4>@q.question</h4>
+        @q.answer
+    </div>
+}
